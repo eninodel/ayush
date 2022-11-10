@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components/macro'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { PageHome } from './PageHome';
+import { PageFirst } from './PageFirst';
+import { PageSecond } from './PageSecond';
+import { PageThird } from './PageThird';
+import { PageFourth } from './PageFourth';
+
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <AppContainer>
+        <Routes>
+          <Route path='/' element={<PageHome />} />
+          <Route path='/first' element={<PageFirst />} />
+          <Route path='/second' element={<PageSecond />} />
+          <Route path='/third' element={<PageThird />} />
+          <Route path='/fourth' element={<PageFourth />} />
+        </Routes>
+      </AppContainer>
+    </Router>
   );
 }
 
