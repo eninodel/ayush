@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.92effc67.css","mappings":"AAAA,EAII,yCAA8C,CAD9C,WAAY,CAFZ,QAAS,CACT,SAGJ","sources":["index.css"],"sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    height: 100%;\n    font-family: 'Courier New', Courier, monospace;\n}"],"names":[],"sourceRoot":""}
